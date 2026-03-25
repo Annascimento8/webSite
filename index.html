@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 - DOM</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        section { margin-bottom: 30px; border-bottom: 1px solid #eee; pb: 10px; }
+        .contador-vazio { color: rgb(246, 150, 150); font-weight: bold; }
+    </style>
+</head>
+<body style="background-color:rgb(198, 248, 255);">
+
+<h1 style="background-color:rgba(255, 189, 189, 0.767);">Atividade 2 – DOM: conceitos básicos</h1>
+    
+
+    <section>
+        <h3>Contador de Cliques</h3>
+        <button id="btnIncrementar">Incrementar (+)</button>
+        <span id="contadorDisplay" style="font-size: 1.5em; margin: 0 10px;">0</span>
+        <button id="btnDecrementar">Decrementar (-)</button>
+    </section>
+
+    <section>
+        <h3>Texto Dinâmico e Contador de Caracteres</h3>
+        <label for="inputTexto">Digite sua mensagem (Enter para adicionar):</label><br>
+        <input type="text" id="inputTexto" placeholder="Escreva algo..." style="width: 300px;">
+        <p>Caracteres (sem espaços): <span id="contadorChar">0</span></p>
+        <div id="containerParagrafos"></div>
+    </section>
+
+    <section>
+        <h3>Adicionar Novo Item</h3>
+        <label>Escolha o tipo de item:</label>
+        <select id="tipoLista">
+            <option value="ul">Lista Não Ordenada (Bolinhas)</option>
+            <option value="ol">Lista Ordenada (Números)</option>
+        </select>
+        <button id="btnAddItem">Inserir Lista</button>
+        <div id="containerListas"></div>
+    </section>
+
+    <button id="btnReset" style="background-color: #ffcccc; padding: 10px; cursor: pointer;">
+        Resetar Tudo
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
